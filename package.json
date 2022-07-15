@@ -7,7 +7,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export":"yarn run build && next export && mv out _static"
+  },
+  "engines":{
+    "node":"14.x"
   },
   "dependencies": {
     "next": "^12.2.0",
